@@ -18,6 +18,7 @@ defmodule SquirrelWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+    get "/pages/:page", PageController, :show
   end
 
   # Other scopes may use custom stacks.
